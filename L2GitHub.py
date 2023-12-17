@@ -36,3 +36,19 @@ elif num==3:
     print(f"Середньоарифметичне: {resultAV}")
 else:
     print("Ви помилилися, натисніть 1,2 або 3")
+
+num2=int(input("Введіть кількість метрів(до 3х цифр): "))
+num3=int(input("Якщо бажаєте порахувати милі - натисніть цифру 1, "
+                 "якщо ярди - натисніть 2, якщо дюйми - натисніть 3: "))
+
+if num3==1:
+    resultMiles=num2*0.00062137
+    print(f"Милі: {resultMiles}")
+elif num3==2:
+    resultYards = num2 * 1.0936
+    print(f"Ярди: {resultYards}")
+elif num3==3:
+    resultInches = num2 * 39.370
+    print(f"Дюйми: {resultInches}")
+else:
+    print("Ви помилилися, натисніть 1,2 або 3")
